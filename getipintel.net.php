@@ -34,6 +34,9 @@ function checkProxy($ip){
 			if ($response < 0 || strcmp($response, "") == 0 ) {
 				//The server returned an error, you might want to do something
 				//like write to a log file or email yourself
+				//This could be true due to an invalid input or you've exceeded
+				//the number of allowed queries. Figure out why this is happening
+				//because you aren't protected by the system anymore
 			}
 				return false;
 		}
