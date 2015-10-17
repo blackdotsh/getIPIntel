@@ -37,6 +37,13 @@ function checkProxy($ip){
 				//This could be true due to an invalid input or you've exceeded
 				//the number of allowed queries. Figure out why this is happening
 				//because you aren't protected by the system anymore
+				//Leaving this section blank is dangerous because you assume
+				//that you're still protected, which is incorrect
+				//and you might think GetIPIntel isn't accurate anymore
+				//which is also incorrect.
+
+				//failure to implement error handling is bad for the both of us
+
 			}
 				return false;
 		}
