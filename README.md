@@ -8,7 +8,7 @@
 * Since the system returns a _real value_, you can customize the level of protection for a particular time frame and adjust accordingly.
 * Use it with a combination of another fraud prevention service to make it even better. Some fraud prevention services do not explicitly look for proxy / VPN IPs. 
 
-The system is serving 2+ million API requests a month and growing as more people find it useful in protecting their online infrastructure.
+The system is serving millions of API requests a week and growing as more people find it useful in protecting their online infrastructure.
 
 
 
