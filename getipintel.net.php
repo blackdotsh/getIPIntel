@@ -12,7 +12,7 @@
 
 //function requires curl
 function checkProxy($ip){
-		$contactEmail="someValidEmailAddress";
+		$contactEmail="someValidEmailAddress"; //you must change this to your own email address
 		$timeout=5; //by default, wait no longer than 5 secs for a response
 		$banOnProability=0.99; //if getIPIntel returns a value higher than this, function returns true, set to 0.99 by default
 		
