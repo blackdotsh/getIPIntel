@@ -12,8 +12,11 @@ The system is serving millions of API requests a week and growing as more people
 
 
 
-Here are some example code to use <a href="http://getipintel.net"> getIPIntel </a> in various code formats
+Here are some example code to use <a href="http://getipintel.net"> getIPIntel </a> in various code formats. They mainly serve as a proof of concept and should not be implemented directly into your system.
 
 ###PHP
 * requires php5-curl
 
+###Installation
+* Please change the email variable to your own email
+* Read the documentation on the website for the latest features. If you wish to use flags, change query string.
