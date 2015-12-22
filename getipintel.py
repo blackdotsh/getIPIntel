@@ -3,7 +3,7 @@ import requests
 import sys
 def checkIP(ip):
 	#change this variable to your email address
-	contactEmail="contact@getipintel.net"
+	contactEmail="YourEmailAddress"
 	#if probability from getIPIntel is grater than this value, return 1
 	maxProbability=0.99
 	#if you wish to use flags or json format, edit the request below
