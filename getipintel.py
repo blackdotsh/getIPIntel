@@ -11,7 +11,7 @@ def checkIP(ip):
 	result = requests.get("http://check.getipintel.net/check.php?ip="+ip+"&contact="+contactEmail, timeout=timeout)
 	if (result.status_code != 200) or (int(result.content) < 0):
 		sys.stderr.write("An error occured while querying GetIPIntel")
-	if (int(result.content) > maxProbability):
+	if (float(result.content) > maxProbability):
 		return 1;
 	else:
 		return 0;
