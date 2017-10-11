@@ -1,4 +1,4 @@
-#IP Intelligence is a free tool that attempts to determine how likely an IP address is a proxy / VPN / bad IP using mathematical and modern computing techniques
+# IP Intelligence is a free tool that attempts to determine how likely an IP address is a proxy / VPN / bad IP using mathematical and modern computing techniques
 
 * Protect your site from automated XSS / SQL Injection / Brute Force / Crawlers that steal your content
 * Serve traffic / content to real users, not bots, which reduces server load
@@ -14,9 +14,9 @@ The system is serving millions of API requests a week and growing as more people
 
 Here are some example code to use <a href="http://getipintel.net"> getIPIntel </a> in various code formats. They mainly serve as a proof of concept and should not be implemented directly into your system.
 
-###PHP
+### PHP
 * requires php5-curl
 
-###Installation
+### Installation
 * Please change the email variable to your own email
 * Read the documentation on the website for the latest features. If you wish to use flags, change query string.
