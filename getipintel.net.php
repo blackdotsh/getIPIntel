@@ -1,7 +1,7 @@
 <?php
 /*
 * A PHP function that interacts with http://getIPIntel.net to look up an IP address
-* returns TRUE if the IP returns a value greater than $banOnProability,
+* returns TRUE if the IP returns a value greater than $banOnProbability,
 * FALSE otherwise, including errors
 * HTTP error codes are NOT explicitly implemented here
 * This should be used as a guide, be sure to edit and test it before using it in production
@@ -14,7 +14,7 @@
 function checkProxy($ip){
 		$contactEmail="someValidEmailAddress"; //you must change this to your own email address
 		$timeout=5; //by default, wait no longer than 5 secs for a response
-		$banOnProability=0.99; //if getIPIntel returns a value higher than this, function returns true, set to 0.99 by default
+		$banOnProbability=0.99; //if getIPIntel returns a value higher than this, function returns true, set to 0.99 by default
 		
 		//init and set cURL options
 		$ch = curl_init();
@@ -28,7 +28,7 @@ function checkProxy($ip){
 		curl_close($ch);
 		
 		
-		if ($response > $banOnProability) {
+		if ($response > $banOnProbability) {
 				return true;
 		} else {
 			if ($response < 0 || strcmp($response, "") == 0 ) {
