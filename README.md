@@ -12,7 +12,7 @@ The system is serving millions of API requests a week and growing as more people
 
 
 
-Here are some example code to use <a href="http://getipintel.net"> getIPIntel </a> in various code formats. They mainly serve as a proof of concept and should not be implemented directly into your system.
+Here are some example code to use <a href="http://getipintel.net"> GetIPIntel </a> in various code formats. They mainly serve as a proof of concept and should not be implemented directly into your system.
 
 Full API documentation is available via https://getipintel.net/free-proxy-vpn-tor-detection-api/ 
 
