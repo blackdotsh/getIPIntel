@@ -1,12 +1,15 @@
 # IP Intelligence is a free tool that attempts to determine how likely an IP address is a proxy / VPN / bad IP using mathematical and modern computing techniques
 
-* Protect your site from automated XSS / SQL Injection / Brute Force / Crawlers that steal your content
-* Serve traffic / content to real users, not bots, which reduces server load
-* Stop bots from scraping your content or bots spamming your website
-* Prevent trolls / people that are trying to bypass a ban
 * Greatly reduce fraud on e-commerce sites (anti-fraud)
-* Since the system returns a _real value_, you can customize the level of protection for a particular time frame and adjust accordingly.
-* Use it with a combination of another fraud prevention service to make it even better. Some fraud prevention services do not explicitly look for proxy / VPN IPs. 
+* Protect your site from automated hacking attempts such as XSS, SQLi, brute force attacks, application scanning and many others
+* Protect your site from crawlers that steal your content
+* Prevent users from abusing promotional offers / multiple sign-ups / affiliate abuse
+* Stop bots from scraping your content or bots spamming your website
+* Serve traffic / content to real users, not bots. Reduce fake views, clicks, and activity that results in click fraud and view fraud (anti-bot detection)
+* Prevent trolls / people that are trying to bypass a ban
+* Adjust your system to limit access (such as not allowing them to change their password, their email, etc) to prevent account hijacking
+* Since the system returns a real value and there's different flag options, you can customize the level of protection for a particular time frame and adjust accordingly
+* Use it with a combination of another fraud prevention service to make it even better. Some fraud prevention services do not explicitly look for proxy / VPN / bad IPs
 
 The system is serving millions of API requests a week and growing as more people find it useful in protecting their online infrastructure.
 
@@ -14,7 +17,14 @@ The system is serving millions of API requests a week and growing as more people
 
 Given an IP address, the system will return a probabilistic value (between a value of ```0``` and ```1```) of how likely the IP is a VPN / proxy / hosting / bad IP. A value of ```1``` means that IP is explicitly banned (a web host, VPN, or TOR node) by our dynamic lists. Otherwise, the output will return a real number value between ```0``` and ```1```, of how likely the IP is bad / VPN / proxy, which is inferred through **machine learning & probability theory techniques** using dynamic checks with large datasets. On average, billions of new records are parsed each month to ensure the datasets have the latest information and old records automatically expire. The system is designed to be efficient, fast, simple, and accurate.
 
-For a deeper understanding of how the API works and the different ```flags``` and ```oflags``` options available, please visit the [API page](https://getipintel.net/free-proxy-vpn-tor-detection-api/).
+
+### Interpretation of the Results
+If a value of 0.50 is returned, then it is as good as flipping a 2 sided fair coin, which implies it's not very accurate. From my personal experience, values > 0.95 should be looked at and values > 0.99 are most likely proxies. Anything below the value of 0.90 is considered as "low risk". Since a real value is returned, different levels of protection can be implemented. It is best for a system admin to test some sample datasets with this system and adjust implementation accordingly. **I only recommend automated action on high values ( > 0.99 or even > 0.995 ) but it's good practice to manually review IPs that return high values.** For example, mark an order as "under manual review" and don't automatically provision the product for high proxy values. Be sure to experiment with the results of this system before you use it live on your projects. If you believe the result is wrong, don't hesitate to contact me, I can tell you why. If it's an error on my end, I'll correct it. If you email me, expect a reply within 12 hours.
+
+___
+
+
+For a deeper understanding of how the API works and the different ```flags``` and ```oflags``` options available, please visit the [API page](https://getipintel.net/free-proxy-vpn-tor-detection-api/). Standard recommendation is to start off with ```flags=m``` option if only proxy / VPN detection is needed. If ```flags=m``` does not have a noticeable impact, then use ```flags=b```. The default query (no flags) is mostly used infront of a payment gateway to protect against fraud because bad IP detection is included.
 
 Here are some example code to use <a href="http://getipintel.net"> GetIPIntel </a> in various code formats. They mainly serve as a proof of concept and should not be implemented directly into your system.
 
