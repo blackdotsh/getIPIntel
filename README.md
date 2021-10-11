@@ -33,7 +33,9 @@ A simple web interface lookup is available via https://getipintel.net/free-proxy
 
 
 ### Full API documentation
-The full API documentation is available via https://getipintel.net/free-proxy-vpn-tor-detection-api/ 
+No registration or sign up required, only a valid contact email is needed.
+
+Full API Documentation URL: https://getipintel.net/free-proxy-vpn-tor-detection-api/ 
 
 ### PHP
 * requires php curl
