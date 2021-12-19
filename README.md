@@ -43,3 +43,6 @@ Full API Documentation URL: https://getipintel.net/free-proxy-vpn-tor-detection-
 ### Installation
 * **Please change the email variable to your own email**
 * Read the documentation on the website for the latest features. If you wish to use flags, change query string.
+
+### New features 
+* added Dec. 2021 - ```oflags=i``` for iCloud Relay Egress IPs - by definition it is still a proxy / VPN a user willingly enables, but this option will allow more flexibility on how to handle these IPs. More information is available on the [API page](https://getipintel.net/free-proxy-vpn-tor-detection-api/).
