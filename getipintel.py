@@ -12,7 +12,7 @@ def checkIP(ip):
 	if (result.status_code != 200) or (float(result.content) < 0):
 		sys.stderr.write("An error occured while querying GetIPIntel")
 	if (float(result.content) > maxProbability):
-		return 1;
+		return 1
 	else:
-		return 0;
+		return 0
 
