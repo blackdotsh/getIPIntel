@@ -40,6 +40,9 @@ Full API Documentation URL: https://getipintel.net/free-proxy-vpn-tor-detection-
 ### PHP
 * requires php curl
 
+### Bash
+* requires curl
+
 ### Installation
 * **Please change the email variable to your own email**
 * Read the documentation on the website for the latest features. If you wish to use flags, change query string.
