@@ -48,5 +48,6 @@ Full API Documentation URL: https://getipintel.net/free-proxy-vpn-tor-detection-
 * Read the documentation on the website for the latest features. If you wish to use flags, change query string.
 
 ### New features 
+* added Jun. 2023 - ```oflags=a``` will return the ASN number(s) of the IP that's being looked up. More information is available on the [API page](https://getipintel.net/free-proxy-vpn-tor-detection-api/).
 * added Jun. 2023 - ```oflags=i``` will include Google One and Google Fi VPN IPs.
 * added Dec. 2021 - ```oflags=i``` for iCloud Relay Egress IPs - by definition it is still a proxy / VPN a user willingly enables, but this option will allow more flexibility on how to handle these IPs. More information is available on the [API page](https://getipintel.net/free-proxy-vpn-tor-detection-api/).
