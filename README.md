@@ -37,6 +37,10 @@ No registration or sign up required, only a valid contact email is needed.
 
 Full API Documentation URL: https://getipintel.net/free-proxy-vpn-tor-detection-api/ 
 
+___
+
+‎⚠️ If your website / service is proxied through Cloudflare, make sure you're looking up ```CF-Connecting-IP``` in the headers. Any similiar infrastructure setup should also be aware that the correct IP is looked up.
+
 ### PHP
 * requires php curl
 
