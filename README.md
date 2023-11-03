@@ -55,3 +55,6 @@ ___
 * added Jun. 2023 - ```oflags=a``` will return the ASN number(s) of the IP that's being looked up. More information is available on the [API page](https://getipintel.net/free-proxy-vpn-tor-detection-api/).
 * added Jun. 2023 - ```oflags=i``` will include Google One and Google Fi VPN IPs.
 * added Dec. 2021 - ```oflags=i``` for iCloud Relay Egress IPs - by definition it is still a proxy / VPN a user willingly enables, but this option will allow more flexibility on how to handle these IPs. More information is available on the [API page](https://getipintel.net/free-proxy-vpn-tor-detection-api/).
+
+### New Changes & Notes
+* added Nov. 3 2023 - A noticeable sized dataset related to malicious / abnormal traffic is being incorporated into the proxy / VPN detection API. It passed internal testing so I've rolled it out to the free API. I'll keep an eye on the weights and if there's no issues, I'll push it to all services. Feel free to reach out if you have any questions.
