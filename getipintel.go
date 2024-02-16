@@ -13,7 +13,7 @@ const (
 	getIPIntelURL = "http://check.getipintel.net/check.php?" //change URL here if you want to add more arguments
 	timeout        = 5 * time.Second // 5 seconds
 	maxProbability = 0.99
-	contactEmail = "contact@getipintel.net" //Replace with your contact email
+	contactEmail = "yourContactEmail" //Replace with your contact email
 )
 
 func checkIP(ip string) (bool, error) {
