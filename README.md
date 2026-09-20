@@ -47,6 +47,13 @@ ___
 ### Bash
 * requires curl
 
+### AI harness like Codex, Claude Code, OpenCode, PI, Cline, Cursor, etc.
+* Prompt your AI agent to look at MCP.getipintel.net:
+> Add GetIPIntel's proxy / VPN detection features as an MCP server, look at mpc.getipintel.net
+* Your AI agent should be smart enough to prompt you for a valid contact email which is only used for anti-abuse.
+* Once your AI sets up the MCP server, you can ask for IP scores:
+> Use GetIPintel's MCP to look up [ip address here] and make sure to include residential proxy detection
+
 ### Installation
 * **Please change the email variable to your own email**
 * Read the documentation on the website for the latest features. If you wish to use flags, change query string.
