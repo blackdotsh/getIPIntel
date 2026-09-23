@@ -49,9 +49,9 @@ ___
 
 ### AI harness like Codex, Claude Code, OpenCode, PI, Cline, Cursor, etc.
 * Prompt your AI agent to look at MCP.getipintel.net:
-> Add GetIPIntel's proxy / VPN detection features as an MCP server, look at mpc.getipintel.net
+> Add GetIPIntel's proxy / VPN detection features as an MCP server, look at mcp.getipintel.net
 * Your AI agent should be smart enough to prompt you for a valid contact email which is only used for anti-abuse.
-* Once your AI sets up the MCP server, you can ask for IP scores:
+* Once your AI sets up the MCP server, you can ask for IP scores, for example:
 > Use GetIPintel's MCP to look up [ip address here] and make sure to include residential proxy detection
 
 ### Installation
